@@ -10,4 +10,6 @@ For more information, please refer to the original repository including followin
 
 If there are any other notices such as lacking in references, please post in issues/discussion to notify and one will try to find it back. Otherwise you could provide me some links and one will add it into the documents. Or you could open pull request with descriptions on what changes you'd made if they're not self-explaining. 
 
+Other thing to note is the requirement is using fastai v2.4 (or 2.4.1). Older version of fastai are not tried. However, newer version (2.5) might have some changes. Example, some file have `Config.config_path` as their path variable. However, this no longer works in v2.5.1 as the code for `Config` no longer acquires the fastai path for you. Instead, you requires manually define the path. 
+
 Thanks. 
