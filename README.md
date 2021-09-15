@@ -12,4 +12,6 @@ If there are any other notices such as lacking in references, please post in iss
 
 Other thing to note is the requirement is using fastai v2.4 (or 2.4.1). Older version of fastai are not tried. However, newer version (2.5) might have some changes. Example, some file have `Config.config_path` as their path variable. However, this no longer works in v2.5.1 as the code for `Config` no longer acquires the fastai path for you. Instead, you requires manually define the path. 
 
+Spacy also requires v2 rather than v3 as they works differently. 
+
 Thanks. 
