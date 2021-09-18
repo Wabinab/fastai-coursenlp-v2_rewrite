@@ -88,3 +88,18 @@ def test_stoi_support_for_python_list():
 def test_str_list_to_par_works():
     assert dls.train_ds.items.text[37] == str_list_to_par(dls, 37).split(" ")
 
+def test_get_y_works_with_train(): 
+    m = get_y(dls)
+
+    assert len(m) == 800
+    # assert value not sure how to implement. 
+
+
+def test_get_y_works_with_valid():
+    m = get_y(dls, train=False)
+
+    assert len(m) == 200
+    # assert value not sure how to implement. 
+
+@pytest.mark.skip("WIP")
+def test_get_y_with_multi_target_raises_not_implemented_error(): pass
